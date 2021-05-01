@@ -1,0 +1,149 @@
+* {
+  margin:0; padding:0;
+text-decoration:none;
+
+}
+article, aside, details, figcaption, figure, 
+footer, header, main, nav, section {
+display: block;
+}
+
+body {
+  font-family: arial;
+}
+@media (max-width: 800px) {
+  #wrapper {
+    flex-direction: column;
+  }
+}
+#wrapper{
+  margin: 0px auto;
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+header {
+  text-align: center;
+  width: 1440px;
+  height: 135px;
+  background: #92d36e;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 180px;
+
+}
+
+ul {
+  list-style-type: none;
+  background-color: #92d36e;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+}
+
+
+li a {
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #fff;
+  color: #4CAF50;
+}
+
+main  {
+  width: 1190px;
+  left: 250px;
+  top: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-content: flex-start; 
+}
+
+
+.main-blocks {
+  height: 320px;
+  width: 540px;
+  background-color: #eeeeee;
+  margin-left: 55px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.main-blocks.activities h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.main-blocks.activities a {
+text-transform: uppercase;
+color: #468847;
+position: absolute;
+top: 10px;
+left: 420px;
+font-size: 18px;
+}
+.main-blocks.activities a:hover {
+  font-weight: bold;
+}
+.main-blocks.activities section .bi.bi-bicycle {
+  font-size: 70px;
+  position: absolute;
+  top: 45px;
+  left: 10px;
+}
+.main-blocks.activities section p{
+  position: absolute;
+  top: 60px;
+  left: 130px;
+}
+.main-blocks.activities section span {
+  position: absolute;
+  top: 70px;
+  left: 400px;
+}
+.main-blocks.activities section .fas.fa-motorcycle {
+  font-size: 70px;
+  position: absolute;
+  top: 55px;
+  left: 10px;
+
+}
+.main-blocks.activities section.active2 {
+  top: 100px;
+  position: absolute;
+}
+
+
+.main-blocks.check h2 {
+  text-transform: uppercase;
+}
+
+
+footer {
+  all: unset;
+  height: 70px;
+  width: 100%;
+  background-color: #468847dc;
+  display: flex;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+
+}
